@@ -1,0 +1,23 @@
+@import 'styles/theme.scss';
+
+.btnWrapper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+
+  button {
+    background-color: $colors-blue;
+    border-radius: 10px;
+    padding: 4px 16px;
+    box-shadow: $shadows-small;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  button:hover,
+  button:focus {
+    background-color: $colors-accent;
+    box-shadow: $shadows-regular;
+    transition: 0.3s;
+  }
+}

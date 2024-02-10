@@ -1,0 +1,36 @@
+@import 'styles/theme.scss';
+
+.statisticList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 500;
+  padding-left: 8px;
+}
+
+.good {
+  color: #0a9144;
+}
+
+.neutral {
+  color: #1f65a7;
+}
+
+.bad {
+  color: #af270f;
+}
+
+.total {
+  color: $colors-gray;
+  font-size: $fontSizes-medium;
+  font-weight: 700;
+}
+
+.positive {
+  color: $colors-gray;
+  font-size: $fontSizes-medium;
+  font-weight: 700;
+  &:after {
+    content: '%';
+  }
+}
