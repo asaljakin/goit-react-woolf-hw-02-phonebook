@@ -1,4 +1,4 @@
-import { ContactItem, Filter } from 'components';
+import { ContactItem } from 'components';
 import styles from './ContactList.module.css';
 
 export const ContactList = ({ contacts, handleDelete }) => {
