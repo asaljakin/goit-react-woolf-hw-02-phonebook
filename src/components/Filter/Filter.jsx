@@ -1,6 +1,6 @@
 import styles from './Filter.module.css';
 
-export const Filter = ({ filter, handleChange }) => {
+export const Filter = ({ filter, changeFilter }) => {
   return (
     <>
       <label className={styles.label}>Find contacts by name </label>
@@ -10,7 +10,7 @@ export const Filter = ({ filter, handleChange }) => {
         placeholder="Search name"
         title="Enter a name to search"
         value={filter}
-        onChange={handleChange}
+        onChange={changeFilter}
       ></input>
     </>
   );

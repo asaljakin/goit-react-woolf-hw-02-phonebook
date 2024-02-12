@@ -1,6 +1,6 @@
 import styles from './ContactItem.module.css';
 
-export const ContactItem = ({ contacts, handleDelete }) => {
+export const ContactItem = ({ contacts, deleteContact }) => {
   return (
     <>
       {contacts.map(({ id, name, number }) => {
@@ -10,8 +10,7 @@ export const ContactItem = ({ contacts, handleDelete }) => {
             <button
               className={styles.btnItem}
               type="button"
-              name={id}
-              onClick={handleDelete}
+              onClick={() => deleteContact(id)}
             >
               Delete
             </button>
